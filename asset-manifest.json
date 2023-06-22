@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cashconverter/static/css/main.c016ab9c.css",
+    "main.js": "/cashconverter/static/js/main.ab825ffc.js",
+    "static/media/money.webp": "/cashconverter/static/media/money.d28af65423426674b1c5.webp",
+    "index.html": "/cashconverter/index.html",
+    "main.c016ab9c.css.map": "/cashconverter/static/css/main.c016ab9c.css.map",
+    "main.ab825ffc.js.map": "/cashconverter/static/js/main.ab825ffc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c016ab9c.css",
+    "static/js/main.ab825ffc.js"
+  ]
+}
