@@ -36,13 +36,7 @@ const calcule = (e) => {
    setInitialValue((parseFloat(toInput.value)/ parseFloat(rate)).toFixed(2));
 }
 }
-const removeAlert = (e) => {
-  
-  if(hideAlert === "alert"){
-    setHideAlert("hide");
-    setDisapear("hide");
-  }
-}
+
   return (
     <div className="App" onClick={removeAlert}>
       <div className="container">
@@ -67,9 +61,6 @@ const removeAlert = (e) => {
         <button onClick={func} className="button">Calculate</button>  
       <div className="rate">{rate}</div>
      </div>
-      <div className={disapear}>
-         <div className={hideAlert}>Select Different Currencies.</div>
-      </div>
 
     </div>
   );

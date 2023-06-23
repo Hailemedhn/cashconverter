@@ -6,19 +6,76 @@
   height: 100vh;
   background-image: url(./image/money.webp);
 }
-.container{
-  padding: 20px;
-  border: 1px solid black;
-  border-radius: 15px;
-  height: 30vh;
-  width: 80vw;
-  display: grid;
-  grid-template-columns:30% 10% 30% 20%;
-  grid-template-rows: 33% 33% 33%;
-  gap: 5px;
-  justify-content: start;
-  align-items: center;
-  background-color: white;
+@media screen and (max-width : 750px) {
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      background-color: white;
+    }
+    button{
+      height: 15%;
+      width: 100%;
+      font-size: 300%;
+      color: white;
+      background-color: rgb(47, 101, 148);
+      overflow: hidden;
+    }
+    .rate{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10%;
+      border: 1px solid rgb(51, 20, 20);
+    }
+}
+
+@media  screen and (min-width:751){
+  .container{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns:30% 10% 30% 20%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 5px;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .button{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 300%;
+    color: white;
+    background-color: rgb(47, 101, 148);
+    overflow: hidden;
+  }
+
+  .rate{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+    border: 1px solid rgb(51, 20, 20);
+  }
 }
 .fromContainer{
   grid-column-start: 1;
@@ -49,59 +106,6 @@ select{
   font-size: 25px;
   border:none;
 }
-.button{
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  font-size: 300%;
-  color: white;
-  background-color: rgb(47, 101, 148);
-  overflow: hidden;
-}
 .button:hover{
   background-color: rgb(11, 23, 34);
-}
-.rate{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 100px;
-  border: 1px solid rgb(51, 20, 20);
-}
-.alertContainer{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0,0,0,0.7);
-}
-
-.alert{
-  padding:100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-  color: white;
-  width : 50%;
-  height: 50%;
-  border: 1px solid red;
-  background-color: rgb(110, 42, 42);
-
-
-}
-.hide{
-  display: none;
 }
