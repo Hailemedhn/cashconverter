@@ -38,7 +38,7 @@ const calcule = (e) => {
 }
 
   return (
-    <div className="App" onClick={removeAlert}>
+    <div className="App" >
       <div className="container">
       <div className="fromContainer">
          <select className="from" onChange = {func} >
